@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watches Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 0;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .watch-container {
+            display: flex;
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+        }
+
+        .watch-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px; 
+            text-align: center;
+            padding-bottom: 1rem;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .watch-img-placeholder {
+            background: #eee;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: #666;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .watch-details {
+            padding: 1rem;
+        }
+
+        .watch-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .watch-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0F9D58;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            background: #333;
+            color: #fff;
+        }
+
+    
+        @media (max-width: 768px) {
+            .watch-container {
+                flex-direction: column; 
+                align-items: center;
+            }
+
+            .watch-card {
+                max-width: 90%; 
+            }
+
+            .nav-links {
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Timepieces</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#cart">Add to Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>Exquisite Timepieces</h1>
+            <p>A collection of luxury watches</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="watch-container">
+            
+            <div class="watch-card">
+                <div class="watch-img-placeholder">
+                    Placeholder for Watch Image 1 (400x200)
+                </div>
+                <div class="watch-details">
+                    <h2 class="watch-title">Classic Chronograph</h2>
+                    <p>A timeless design for the modern gentleman.</p>
+                    <div class="watch-price">PKR 45,500</div>
+                </div>
+            </div>
+
+            <div class="watch-card">
+                <div class="watch-img-placeholder">
+                    Placeholder for Watch Image 2 (400x200)
+                </div>
+                <div class="watch-details">
+                    <h2 class="watch-title">Elegant Ladies Watch</h2>
+                    <p>Subtle sophistication with a touch of class.</p>
+                    <div class="watch-price">PKR 32,000</div>
+                </div>
+            </div>
+
+            <div class="watch-card">
+                <div class="watch-img-placeholder">
+                    Placeholder for Watch Image 3 (400x200)
+                </div>
+                <div class="watch-details">
+                    <h2 class="watch-title">Sport Dive Watch</h2>
+                    <p>Durable and reliable for all your adventures.</p>
+                    <div class="watch-price">PKR 59,999</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Exquisite Timepieces. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
